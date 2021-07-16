@@ -1,0 +1,351 @@
+
+/* Vomnibar CSS */
+
+#vomnibar > ol, #vomnibar > ul {
+  list-style: none;
+  display: none;
+} 
+#vomnibar {
+  display: block;
+  position: fixed;
+  width: calc(100% - 20px); /* adjusted to keep border radius and box-shadow visible*/
+  /*min-width: 400px;
+  top: 70px;
+  left: 50%;*/
+  top: 8px;
+  left: 8px;
+  /*margin: 0 0 0 -40%;*/
+  font-family: sans-serif;
+
+  background: #F1F1F1;
+  text-align: left;
+  border-radius: 4px; 
+  box-shadow: 0px 2px 8px 0px rgb(171 171 171);
+  border-bottom: none;
+  border: 1px solid #d8d8d8;
+  z-index: 2139999999; 
+}
+
+#vomnibar input {
+  color: #000;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  height: 34px;
+  margin-bottom: 0;
+  padding: 4px;
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid #E8E8E8;
+  box-shadow: #444 0px 0px 1px;
+  width: 100%;
+  outline: none;
+  box-sizing: border-box;
+}
+
+#vomnibar .vomnibarSearchArea {
+  display: block;
+  position: relative;
+  padding: 10px;
+  background-color: #F1F1F1;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid #C6C9CE;
+}
+
+#vomnibar > ul {
+  background-color: white;
+  border-radius: 0 0 4px 4px;
+  list-style: none;
+  padding: 0; 
+  margin-top: 0;
+}
+
+#vomnibar > ul li {
+  border-bottom: 1px solid #ddd;
+  line-height: 1.1em;
+  padding: 7px 10px;
+  cursor: pointer;
+  font-size: 16px;
+  color: black;
+  position: relative;
+  display: list-item;
+  margin: auto;
+}
+
+#vomnibar > ul li:last-of-type {
+  border-bottom: none;
+}
+
+#vomnibar > ul li .vomnibarTopHalf, #vomnibar > ul li .vomnibarBottomHalf {
+  display: block;
+  overflow: hidden;
+}
+#vomnibar > ul li .vomnibarTopHalf, #vomnibar > ul li .vomnibarBottomHalf-csdn {
+  display: flex
+}
+#vomnibar > ul li .vomnibarTopHalf, #vomnibar > ul li .vomnibarBottomHalf-csdn .vomnibarUrl{
+  text-overflow: ellipsis;
+  width: 95%;
+  overflow: hidden;
+}
+
+#vomnibar > ul li .vomnibarBottomHalf {
+  font-size: 15px;
+  margin-top: 3px;
+  padding: 2px 0;
+}
+
+#vomnibar > ul li .vomnibarIcon {
+  padding: 0 13px 0 6px;
+  vertical-align: bottom;
+}
+
+#vomnibar > ul li.frame .frame-loading {
+  color: #000;
+  padding-left: 20px;
+}
+#vomnibar > ul li .vomnibarSource { 
+  margin-right: 4px; 
+  /* color: #fff; */
+  margin-right: 4px;
+  max-height: 18px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  font-size: 14px;
+  /* background: rgba(1, 112, 255, 0.64); */ 
+  color: #2774CC;   
+  background: #E9F1F9;
+  padding: 1px 4px;
+}
+
+
+
+#vomnibar > ul li .vomnibarRelevancy {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 5px;
+  background-color: white;
+  color: black;
+  font-family: monospace;
+  width: 100px;
+  overflow: hidden;
+}
+
+#vomnibar > ul li .vomnibarUrl {
+  display: inline-block;
+  width: calc(100% - 70px);
+  overflow: hidden;
+  vertical-align: bottom;
+  text-overflow: ellipsis; 
+  white-space: nowrap;
+  color: #555666; 
+}
+
+#vomnibar > ul li .vomnibarMatch {
+  font-weight: bold;
+  color: #007cff;
+}
+
+#vomnibar > ul li em, #vomnibar > ul li .vomnibarTitle {
+  color: black;
+  /*  可能修改回去 color */
+  color: #2440b3;
+  margin-left: 4px;
+  font-weight: normal;
+}
+#vomnibar > ul li em { 
+  font-style: normal;
+  color: #007cff;
+  font-weight: bold;
+}
+#vomnibar > ul li em .vomnibarMatch, #vomnibar > ul li .vomnibarTitle .vomnibarMatch {
+  color: #007cff;
+}
+
+#vomnibar > ul li.vomnibarSelected {
+  background-color: #edf4ff;
+  font-weight: normal;
+}
+
+#vomnibar > ul li:hover {
+  background-color: #edf4ff;
+  font-weight: normal;
+}
+
+#vomnibarInput::selection {
+  /* This is the light grey color of the vomnibar border. */
+  /* background-color: #F1F1F1; */
+
+  /* This is the light blue color of the vomnibar selected item. */
+  /* background-color: #BBCEE9; */
+
+  /* This is a considerably lighter blue than Vimium blue, which seems softer
+   * on the eye for this purpose. */
+  background-color: #E6EEFB;
+}
+#vomnibar .issues{ 
+  display: none;
+  position: absolute;
+  right: 8px;
+  bottom: 10px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+}
+#vomnibar .issues:hover img{
+  display: none; 
+} 
+#vomnibar .issues:hover a{ 
+  display: block;
+}
+#vomnibar .issues img{ 
+  width: 20px;
+  cursor: pointer;
+}
+#vomnibar .issues a{  
+  display: none;
+  cursor: pointer;
+  color: #888;
+  font-size: 12px;
+
+} 
+#vomnibar .vimium-json{ 
+  margin: 0;
+  width: 100%;
+  padding: 0;
+}
+#vomnibar .vimium-qrcode{  
+  text-align: center;
+  padding: 10px;
+} 
+.vomnibarNoInsertText {
+  visibility: hidden;
+}
+/* json */
+.vimiumReset .json-result-panel{ 
+  height: calc(100vh - 140px);
+  width: 100%;
+  position: relative;
+}
+.vimiumReset .json-result-panel .extras{
+  position: absolute;
+  top: 5px;
+  z-index: 10;
+  right: 30px; 
+} 
+.vimiumReset .json-result-panel .extras a{
+  margin-left: 8px;
+  cursor: pointer;
+} 
+.vimiumReset .json-result-panel .extras a img{ 
+  transition: all .3s; 
+  border-radius: 5px;
+  padding: 5px;
+  width: 26px;
+  height: 26px;
+}
+.vimiumReset .json-result-panel .extras:hover a img{ 
+  background: #f3f3f3;
+}
+.vimiumReset .json-result-panel > pre{
+  white-space: pre-wrap;
+  word-break: break-all;
+  height: 100%;
+  overflow: auto;
+}
+
+
+
+
+/* Dark Vomnibar */ 
+@media (prefers-color-scheme: dark) {
+  #vomnibar {
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    border-radius: 6px;
+  }
+
+  #vomnibar .vomnibarSearchArea, #vomnibar {
+    background-color: #35363a;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  #vomnibar input {
+    background-color: #202124;
+    color: white;
+    border: none;
+  }
+
+  #vomnibar > ul  {
+    background-color: #202124;
+  }
+
+  #vomnibar > ul li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  #vomnibar > ul li.vomnibarSelected {
+    background-color: #37383a;
+  }
+  #vomnibar > ul li:hover {
+    background-color: #37383a;
+  }
+  #vomnibar > ul li .vomnibarUrl {
+    white-space: nowrap;
+    color: #5ca1f7;
+  }
+  #vomnibar > ul li .vomnibarUrl em{
+    color: #E33E33;
+  }
+
+  #vomnibar > ul li em,
+  #vomnibar > ul li .vomnibarTitle {
+    color: white;
+  }
+  #vomnibar > ul li .vomnibarTitle em {
+    color:#E33E33;
+  }
+  #vomnibar > ul li .vomnibarSource { 
+    font-size: 14px; 
+    flex-shrink: 0;
+    max-height: 18px;
+    border-radius: 4px;  
+    color: #2774CC;   
+    background: #E9F1F9;
+    padding: 1px 4px; 
+  } 
+  #vomnibar > ul li.frame .frame-loading {
+    color: #fbfbfb; 
+  }
+  #vomnibar > ul li .vomnibarMatch {
+    color: #E33E33;
+  }
+
+  #vomnibar > ul li em .vomnibarMatch,
+  #vomnibar > ul li .vomnibarTitle .vomnibarMatch {
+    color: #E33E33;
+  } 
+
+  .vimiumReset .json-result-panel .extras:hover a img{ 
+    background: #505050;
+  } 
+  .vimiumReset .json-result-panel > pre { 
+    color: #d4d4d4;
+  }
+}
+ 
+#vomnibar > ul li .vomnibarSource-csdn{  
+  color: #E33E33;   
+  background: #FFF1F0;
+}
+#vomnibar > ul li .vomnibarSource-bookmark{
+  color: #66B555;   
+  background: #EEF8EC;
+}
+#vomnibar > ul li .vomnibarSource-history{
+  color: #555666;   
+  background: #F0F0F5;
+} 
+#vomnibar > ul li .vomnibarSource-tab{
+  color: #2774CC;   
+  background: #E9F1F9;
+}

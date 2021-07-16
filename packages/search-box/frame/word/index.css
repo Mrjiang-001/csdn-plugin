@@ -1,0 +1,28 @@
+ 
+[class^="Search_search"],  
+[class^="Nav_nav"]{
+    display: none;
+} 
+body [id$="next"] main{
+    margin: 0;
+    padding: 0;
+}
+
+body [id$="next"] main [class^="Content_right"] {
+    display: none;
+}
+body [id$="next"] main [class^="Content_content"] {
+    margin-top: 0;
+    /* margin-right: 0; */
+}
+
+body [id$="next"] main [class^="Content_center"] {
+    width: 100%;
+} 
+body [id$="next"] main [class^="DicTab_tab"] ul li:nth-child(3){
+    display: none;
+} 
+
+[class^="jsx-"]{
+    display: none;
+}

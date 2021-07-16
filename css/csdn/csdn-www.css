@@ -1,0 +1,4 @@
+[id^="kp_box"] {
+    display: block;
+}
+[id^="floor-ad"]{ display: none; }

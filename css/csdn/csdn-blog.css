@@ -1,0 +1,12 @@
+[id^="kp_box"] {
+    display: none;
+}
+.nodata .recommend-right[data-type = 'recommend'] #recommend-right > [class^="programmer"] {
+    display: none !important;
+}
+.blog_container_aside > .box-shadow.mb8 {
+    display:none !important;
+}
+.banner-ad-box{
+   display:none !important;
+}

@@ -1,0 +1,29 @@
+.container.logo-search,
+.container.navigation,
+.container.main > .row .right-column,
+body > #footer,
+button.feedback-btn,
+div.fixed-btn,
+#respond,
+[id^="ad-"],
+#comments{
+    display: none !important; 
+} 
+.container{
+    padding-right: 0 !important;
+}
+.row .col.middle-column {
+    width: 85%;
+    margin-right: 0 !important;
+}
+@media handheld, only screen and (max-width: 768px) { 
+    .middle-column, .middle-column-home {
+        width: 100% !important; 
+    }
+}
+.container.main > .row{
+    max-width: 100% !important;
+}
+.main {
+    margin-top: 0 !important;
+} 

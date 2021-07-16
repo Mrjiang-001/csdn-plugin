@@ -1,0 +1,38 @@
+#content_right{
+    display: none !important;
+}
+#wrapper #head{
+    display: none !important; 
+}
+.wrapper_new #s_tab{ 
+    padding-top: 10px !important; 
+}  
+/* .wrapper_new #s_tab .s_tab_inner{  
+    text-align: center;
+}
+
+#container.sam_newgrid #content_left {
+    width: 100% !important; 
+}
+#container.sam_newgrid{
+    margin: 0 auto !important;
+}
+#container.sam_newgrid #content_left .result {
+    margin: 0 auto  !important;
+    margin-bottom: 20px  !important;
+}
+#container.sam_newgrid .nums{
+    margin: 0 auto  !important;
+}
+.wrapper_new #rs{
+    margin: 0 auto !important; 
+    margin-bottom: 10px;
+}
+#page .page-inner{ 
+    padding-left: 0 !important; 
+    text-align: center !important; 
+}
+#container.sam_newgrid #content_left .result-op{ 
+    margin: 0 auto !important; 
+    margin-bottom: 20px; 
+} */
